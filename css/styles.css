@@ -55,9 +55,9 @@ img {
     display: block;
 }
 
-/* .item * {
-    outline: 1px solid red;
-} */
+.item * {
+    outline: 1px solid red; 
+}
 
                                 /* Шапка */
 
@@ -101,6 +101,22 @@ img {
 .navigation-link {
     color: var(--main-text-color);
 }
+
+.header-contacts-link  {
+    color: var(--secondary-text-color);
+}
+
+.navigation-link,
+.header-contacts-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
                                 /* Hover effects */
 .logo-style,
 .navigation-link:hover,
@@ -134,20 +150,7 @@ img {
     color: var(--action-color);
 }
 
-.navigation-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
                                 /* Icons */
-.header-contacts-link  {
-    display: block;
-}
 
                                 /* Icons for header via bg*/
 
@@ -179,9 +182,7 @@ img {
 .header-contacts-item {
     display: flex;
     align-items: center;
-    cursor: pointer;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
 }
 
 .envelope-icon,
