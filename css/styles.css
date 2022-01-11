@@ -109,8 +109,8 @@ img {
 
 .navigation-link,
 .header-contacts-link {
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
+    padding-top: 32px;
+    padding-bottom: 32px;
     align-items: center;
     font-weight: 500;
     font-size: 14px;
@@ -622,10 +622,10 @@ border: 1px solid var(--icons-color);
     line-height: 1.62;
 
     padding: 6px 22px;
-
 }
 
                                         /* Portfolio cards */
+
 
 .portfolio-card-list {
     display: flex;
@@ -635,13 +635,16 @@ border: 1px solid var(--icons-color);
     margin-left: -30px;
 }
 
-.portfolio-card-item {
+.portfolio-card-link {
+    display: block;
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
 }
 
-.portfolio-card-item:hover {
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -651,7 +654,6 @@ border: 1px solid var(--icons-color);
     border-bottom: 1px solid var(--secondary-border-line-color);
     
     padding: 20px 24px;
-
 }
 
 .portfolio-card-subtitle {
@@ -673,7 +675,6 @@ border: 1px solid var(--icons-color);
     font-size: 16px;
     line-height: 1.87;
 }
-
 
                                     /* Подвал на страницах */
 
