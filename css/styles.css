@@ -55,22 +55,23 @@ img {
     display: block;
 }
 
-.item * {
+/* .item * {
     outline: 1px solid red; 
-}
+} */
 
                                 /* Шапка */
 
 .navigation,
 .navigation-list,
-.header-contacts-list{
-    display: flex;
-    align-items: center
-}
-
+.header-contacts-list,
 .navigation-main {
     display: flex;
+    align-items: center;
 }
+
+/* .navigation-main {
+    display: flex;
+} */
 
 .navigation-list .item:not(:last-child) {
     margin-right: 50px;
@@ -108,9 +109,9 @@ img {
 
 .navigation-link,
 .header-contacts-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -346,7 +347,6 @@ background-image: url(../images/icons/workflow-4-astronaut.svg);
     fill: currentColor;
 }
 
-
                                             /* Наши работы */
 
 .workflow {
@@ -467,7 +467,8 @@ background-image: url(../images/icons/workflow-4-astronaut.svg);
 
                                 /* Team socials set as inline svg */
 
-.team-socials-icon-box {
+.team-socials-icon-box,
+.clients-list {
     display: flex;
 }
 
@@ -507,16 +508,12 @@ background-image: url(../images/icons/workflow-4-astronaut.svg);
 }
 
 .clients-title {
-margin-top: 0;
-margin-bottom: 50px;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-}
-
-.clients-list {
-    display: flex;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 
                             /* Clients icons as background */
@@ -596,20 +593,20 @@ border: 1px solid var(--icons-color);
 .portfolio-btn-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 34px;
 }
 
 .portfolio-btn-item  {
     margin-right: 8px;
-    margin-bottom: 34px;
-    
     border-radius: 4px;
 }
+
 .portfolio-btn-button.current,
 .portfolio-btn-button:hover,
 .portfolio-btn-button:focus {
-        background-color: var(--action-color);
-        color:var(--main-white-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--action-color);
+    color:var(--main-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -645,9 +642,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-card-item:hover {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 
-    0 4px 4px rgba(0, 0, 0, 0.06), 
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-card-content {
@@ -725,12 +720,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-join-us {  
     margin-left: 70px;
-    padding-top: 12px;
-    padding-bottom: 100px;
 }
 
 .footer-join-us > .text {
@@ -807,6 +801,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 20px;
 }
 
+.footer-join-us-item:focus,
 .footer-join-us-link:hover,
 .footer-join-us-link:focus {
     background-color: var(--action-color);
